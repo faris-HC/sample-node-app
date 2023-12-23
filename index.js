@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 
+const PORT = 8015;
+const HOST = '0.0.0.0'; // or replace with your server's IP address
+
 app.get('/', (req, res) => {
-  res.send('Hey, I\'m a Node.js app by faris ...p!');
+  res.send('Hey, I\'m a Node.js app by faris from HC!');
 });
 
-app.listen(8015, '127.0.0.1', () => {
-  console.log(`Server is up on http://127.0.0.1:8015`);
+app.listen(PORT, HOST, () => {
+  console.log(`Server is up on http://${HOST}:${PORT}`);
 });
-
