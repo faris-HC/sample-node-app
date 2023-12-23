@@ -6,6 +6,9 @@ app.get('/', (req, res) => {
   res.send('Hey, I\'m a Node.js app from Fariz by HC!');
 });
 
-app.listen(8015, '127.0.0.1', () => {
-  console.log(`Server is up on http://127.0.0.1:8015`);
+const PORT = 8015;
+const HOST = '0.0.0.0';
+
+app.listen(PORT, HOST, () => {
+  console.log(`Server is up on http://${HOST}:${PORT}`);
 });
