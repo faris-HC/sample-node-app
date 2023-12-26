@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hey, I\'m a Node.js app test jenkins tester2');
+  res.send('Hey, I\'m a Node.js app test jenkins tester20');
 });
 
-app.listen(8015, '127.0.0.1', () => {
-  console.log(`Server is up on http://127.0.0.1:8015`);
+const PORT = 8020;
+const HOST = '0.0.0.0'; 
+app.listen(PORT, HOST, () => {
+  console.log(`Server is up on http://${HOST}:${PORT}`);
 });
