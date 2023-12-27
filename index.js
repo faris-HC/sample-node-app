@@ -1,12 +1,10 @@
-const express = require('express');
-const app = express();
+  const express = require('express');
+  const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hey, I\'m a Node.js app test jenkins test last!');
-});
+  app.get('/', (req, res) => {
+    res.send('Hey, I\'m a Node.js app test jenkins tester20');
+  });
 
-const PORT = 8020;
-const HOST = '0.0.0.0'; 
-app.listen(PORT, HOST, () => {
-  console.log(`Server is up on http://${HOST}:${PORT}`);
-});
+  app.listen(8020, '127.0.0.1', () => {
+    console.log(`Server is up on http://127.0.0.1:8020`);
+  });
