@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "daemonize -E BUILD_ID=dontKillMe /root/.nvm/versions/node/v21.5.0/bin/node /var/lib/jenkins/workspace/node-jenkins-test-app/index.js"
-  },
+    "start": "node index.js"
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ammezie/sample-nodejs-app.git"
